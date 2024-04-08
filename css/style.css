@@ -345,7 +345,7 @@ a.text-black {
 
 /* Preloder */
 
-#preloder {
+/* #preloder {
 	position: fixed;
 	width: 100%;
 	height: 100%;
@@ -405,7 +405,7 @@ a.text-black {
 		border: 4px solid #f44336;
 		border-left-color: transparent;
 	}
-}
+} */
 
 /*---------------------
   Header
@@ -3650,11 +3650,7 @@ section.about-page.spad {
     transform: translatey(0px);
     animation: pulse 1.5s infinite;
     box-shadow: 0 0 0 0 #147a86;
-    -webkit-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-    -moz-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-    -ms-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-    animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-    font-weight: normal;
+      font-weight: normal;
     font-family: sans-serif;
     text-decoration: none !important;
     transition: all 300ms ease-in-out;
@@ -3688,7 +3684,6 @@ section.about-page.spad {
     align-items: center;
     justify-content: center;
     transform: translatey(0px);
-    animation: pulse 1.5s infinite;
     box-shadow: 0 0 0 0 #42db87;
     box-shadow: 0 0 0 0 #42db87;
 	-webkit-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
@@ -3715,14 +3710,31 @@ section.about-page.spad {
     transform: translatey(0px);
     animation: pulse 1.5s infinite;
     box-shadow: 0 0 0 0 #42db87;
-    -webkit-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-    -moz-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-    -ms-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-    animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
     font-weight: normal;
     font-family: sans-serif;
     text-decoration: none !important;
     transition: all 300ms ease-in-out;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.pulse{
+	width: 100px;
+	height: 100px;
+	background-color: #3498db;
+	border-radius: 50%;
+	animation: pulse 2s infinite;
+	
 }
 
 /* side-icon */
